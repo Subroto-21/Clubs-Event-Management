@@ -11,8 +11,6 @@ import { auth, organizerauth } from "../middleware/auth.js";
 
 const router = express.Router();
 
-//http://localhost:5000/posts
-
 router.get("/AllForUser",auth,getEventsForUser);
 router.get("/AllForOrganizer",auth,getEventsForOrganizer);
 router.get("/", getEvents);
