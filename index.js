@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("Hello to iTechno API");
+  res.send("Hello");
 });
 app.use("/user", userRoutes);
 app.use("/events", eventRoutes);
